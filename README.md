@@ -9,4 +9,4 @@ This script also uses a 3 level deep list of lists.  A list for holding all data
 
 Many thanks to the python community for all the online tutorials, whose code has been borrowed/modified to make this possible.
 
-![alt text](heat_map_example.png "example heat map")
+![alt text](heat_map_example.PNG "example heat map")
