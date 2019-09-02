@@ -17,6 +17,7 @@ from openpyxl.styles import Alignment
 from openpyxl.styles import PatternFill
 
 #________________________________________________________________________________________________________________________________________________
+
 #empty variables for handling encryption
 key = ""
 uncipher_text = ""
