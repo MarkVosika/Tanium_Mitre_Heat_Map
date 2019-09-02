@@ -121,6 +121,8 @@ sheet4 = wb.create_sheet('macOS')
 
 list_of_lists = []
 
+#_______________________________________________________________________________________________________________________________________________________
+
 def parse_json(platform):
 	global count
 	#create empty list for each kill chain phase:
@@ -146,8 +148,6 @@ def parse_json(platform):
 					for k,v in i.items():
 						if index[1] == v:
 							list_of_lists[index[0]].append([t_id, technique["name"].encode("utf-8")]) #list containing technique id and name appended
-
-#_______________________________________________________________________________________________________________________________________________________
 	
 	# write to excel file all the data, making first row bold
 	bold_font = Font(bold = True)		#set bold font variable
@@ -188,6 +188,8 @@ def parse_json(platform):
 	count += 1
 
 	wb.save('Heat_Map.xlsx')							
+
+#_______________________________________________________________________________________________________________________________________________________
 
 # call the main function
 parse_json([all_techniques])
